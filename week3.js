@@ -15,17 +15,22 @@ console.log (last - first);
 
 //  c.	Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
-var total = 0;
-for(var i = 0; i < ages.length; i++) {
-    total += ages[i];
-}
-var avg = total / ages.length;
 
+let sum = ages.reduce(myFunction);
+
+function myFunction(total, value) {
+  return total + value;
+}
+var avg = sum / ages.length;
 console.log (avg); 
 
 
 //2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; 
+
 //  a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+
+
 //  b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 //3.	How do you access the last element of any array?
 //4.	How do you access the first element of any array?
