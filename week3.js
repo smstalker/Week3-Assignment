@@ -36,12 +36,23 @@ let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 //4.	How do you access the first element of any array?
 //5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 //     For example:
+//    namesArray = ["Kelly", "Sam", "Kate"] //given this array
+//    nameLengths = [5, 3, 4] //create this new array
+const nameLengths = names.map (mySecondFunction);
 
-//namesArray = ["Kelly", "Sam", "Kate"] //given this array
-//nameLengths = [5, 3, 4] //create this new array
+function mySecondFunction(value, index, array){
 
+  return value.length
+}
+console.log (nameLengths);
 
 //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+let secondSum = nameLengths.reduce(myThirdFunction);
+function myThirdFunction (total, value) {
+  return total + value
+}
+console.log (secondSum); 
+
 //7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. 
 //      (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
 //8.	Write a function that takes two parameters, firstName and lastName, and returns a full name 
