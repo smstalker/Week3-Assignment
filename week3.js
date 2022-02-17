@@ -1,35 +1,49 @@
 //1.	Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 let ages = [3,9,23,64,2,8,28,93]; 
-//  a.	Programmatically subtract the value of the first element in the array from the value in the last element of the array 
-//            (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
-// const first = ages[0];
-// const last = ages[ages.length - 1];
-// console.log (last - first);
+
+  //  a.	Programmatically subtract the value of the first element in the array from the value in the last element of the array 
+  //            (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
+  // const first = ages[0];
+  // const last = ages[ages.length - 1];
+  // console.log (last - first);
+
 
 //  b.	Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
-ages.push(6);
-const first = ages[0];
-const last = ages[ages.length - 1];
-console.log (last - first); 
+// ages.push(6);
+// const first = ages[0];
+// const last = ages[ages.length - 1];
+// console.log (last - first); 
  
 
 //  c.	Use a loop to iterate through the array and calculate the average age. Print the result to the console.
 
+// let sum = ages.reduce(myFunction);
 
-let sum = ages.reduce(myFunction);
-
-function myFunction(total, value) {
-  return total + value;
-}
-var avg = sum / ages.length;
-console.log (avg); 
-
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// var avg = sum / ages.length;
+// console.log (avg); 
 
 //2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; 
 
-//  a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+// a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
 
+const letters = names.map (question2Function);
+
+function question2Function(value, index, array){
+
+  return value.length; 
+}
+
+let sum = letters.reduce(myFunction);
+
+function myFunction(total, value) {
+  return total + value;
+}
+var avg = sum / letters.length;
+console.log (avg); 
 
 //  b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 //3.	How do you access the last element of any array?
@@ -38,20 +52,20 @@ let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 //     For example:
 //    namesArray = ["Kelly", "Sam", "Kate"] //given this array
 //    nameLengths = [5, 3, 4] //create this new array
-const nameLengths = names.map (mySecondFunction);
+// const nameLengths = names.map (mySecondFunction);
 
-function mySecondFunction(value, index, array){
+// function mySecondFunction(value, index, array){
 
-  return value.length
-}
-console.log (nameLengths);
+//   return value.length
+// }
+// console.log (nameLengths);
 
 //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
-let secondSum = nameLengths.reduce(myThirdFunction);
-function myThirdFunction (total, value) {
-  return total + value
-}
-console.log (secondSum); 
+// let secondSum = nameLengths.reduce(myThirdFunction);
+// function myThirdFunction (total, value) {
+//   return total + value
+// }
+// console.log (secondSum); 
 
 //7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. 
 //      (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
