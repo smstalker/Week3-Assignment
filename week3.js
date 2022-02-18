@@ -77,18 +77,23 @@ let ages = [3,9,23,64,2,8,28,93];
 //       (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
 
 
-function seventhFunction(word, n){
+//function seventhFunction(word, n){
 
-  let result = word.repeat(n);
-  console.log(result);
-}
-seventhFunction ('Hola', 5); 
-
-
-
+//  let result = word.repeat(n);
+//  console.log(result);
+// }
+// seventhFunction ('Hola', 5); 
 
 //8.	Write a function that takes two parameters, firstName and lastName, and returns a full name 
 //            (the full name should be the first and the last name separated by a space).
+
+
+  function fullName(firstName, lastName) {
+    let nameResult = firstName + " " + lastName;
+    console.log (nameResult); 
+  }
+fullName ("Peter", "Parker");
+
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 //10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
 //11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the 
