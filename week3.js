@@ -25,50 +25,68 @@ let ages = [3,9,23,64,2,8,28,93];
 // var avg = sum / ages.length;
 // console.log (avg); 
 
-//2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
-let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; 
+// //2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+ let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; 
 
-// a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
+// // a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
 
-const letters = names.map (question2Function);
+// const letters = names.map (question2Function);
 
-function question2Function(value, index, array){
+// function question2Function(value, index, array){
 
-  return value.length; 
-}
+//   return value.length; 
+// }
 
-let sum = letters.reduce(myFunction);
+// let sum = letters.reduce(myFunction);
 
-function myFunction(total, value) {
-  return total + value;
-}
-var avg = sum / letters.length;
-console.log (avg); 
+// function myFunction(total, value) {
+//   return total + value;
+// }
+// var avg = sum / letters.length;
+// console.log (avg); 
 
-//  b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
+// //  b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
+// console.log (names.join(" "))
+
 //3.	How do you access the last element of any array?
+    //console.log (names[names.length -1]); 
+
 //4.	How do you access the first element of any array?
+    //console.log (names [0]); 
+
 //5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 //     For example:
 //    namesArray = ["Kelly", "Sam", "Kate"] //given this array
 //    nameLengths = [5, 3, 4] //create this new array
-// const nameLengths = names.map (mySecondFunction);
+// const nameLengths = names.map (question5Function);
 
-// function mySecondFunction(value, index, array){
+// function question5Function(value, index, array){
 
 //   return value.length
 // }
 // console.log (nameLengths);
 
-//6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
-// let secondSum = nameLengths.reduce(myThirdFunction);
-// function myThirdFunction (total, value) {
+// //6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+// let secondSum = nameLengths.reduce (question6function);
+// function question6function (total, value) {
 //   return total + value
 // }
-// console.log (secondSum); 
+// console.log (secondSum);
 
-//7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. 
-//      (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+// 7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. 
+//       (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+
+
+function seventhFunction(word, n){
+
+  let result = word.repeat(n);
+  console.log(result);
+}
+seventhFunction ('Hola', 5); 
+
+
+
+
 //8.	Write a function that takes two parameters, firstName and lastName, and returns a full name 
 //            (the full name should be the first and the last name separated by a space).
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
