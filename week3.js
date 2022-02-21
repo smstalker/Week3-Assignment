@@ -94,23 +94,50 @@ let ages = [3,9,23,64,2,8,28,93];
 // fullName ("Peter", "Parker");
 
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
-let numbers = [12, 6, 4, 36, 20, 33]
-let sum = numbers.reduce(myFunction);
+// let sum = numbers.reduce
+// }
+// console.log (sum); 
+// if (sum >100) {
+//   console.log ('true')
+// }
 
-function myFunction(total, value, index, array) {
-  return total + value;
-}
-console.log (sum); 
-if (sum >100) {
-  console.log ('true')
-}
 //10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
-var avg = sum / numbers.length;
-console.log (avg); 
+// var avg = sum / numbers.length;
+// console.log (avg); 
 
 //11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the 
 //            average of the elements in the second array.
+// secondNumbers = [43, 14, 3, 22]
+// let secondSum = secondNumbers.reduce(myFunction); 
+// var secondAvg = secondSum / secondNumbers.length; 
+
+// console.log (secondAvg);
+
 //12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside 
 //            and if moneyInPocket is greater than 10.50.
+// function willBuyDrink (isHotOutside, moneyInPocket){
+//   if (isHotOutside == true && moneyInPocket > 10.50)
+//   result = 'true'
+
+//   else (result = "false");
+//   console.log (result)
+// }
+// willBuyDrink(true, 9);
+// willBuyDrink(false, 12);
+// willBuyDrink(true, 15);
+
 //13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
- 
+//A company needs to track average miles driven per day on company owned vehicles for budget tracking purpaoses. 
+// This function will display miles driven given a beginning mileage and ending mileage and an average miles per number of days driven
+
+// function mileageFunction(beginningMiles, endingMiles, daysDriven){
+  
+
+//   avgMiles = (endingMiles - beginningMiles)/daysDriven;
+
+//   console.log('You have driven', (endingMiles - beginningMiles), 'in',daysDriven, 'days. Which is', avgMiles, "per day.");
+
+// } 
+
+// mileageFunction(43750, 47540, 20);
+
