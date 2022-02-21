@@ -94,24 +94,40 @@ let ages = [3,9,23,64,2,8,28,93];
 // fullName ("Peter", "Parker");
 
 //9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
-// let sum = numbers.reduce
-// }
-// console.log (sum); 
-// if (sum >100) {
-//   console.log ('true')
-// }
+let numbers = [12, 6, 4, 36, 20, 33, 55]
+
+// let sum = numbers.reduce(myFunction);
+  function myFunction(total, value, index, array){
+   return total + value; 
+ }
+//  console.log (sum); 
+//  if (sum >100) {
+//    console.log ('true')
+//  }
 
 //10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
-// var avg = sum / numbers.length;
-// console.log (avg); 
+// function avgFunction(numbers, sum){
+//  console.log(sum /numbers.length);
+//   }
+
+// avgFunction(numbers, sum);
 
 //11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the 
-//            average of the elements in the second array.
+//    average of the elements in the second array.
+// firstNumbers = [6, 19, 4, 92, 8]
+// let firstSum = firstNumbers.reduce(myFunction);
+// var firstAvg = firstSum / firstNumbers.length;
 // secondNumbers = [43, 14, 3, 22]
 // let secondSum = secondNumbers.reduce(myFunction); 
 // var secondAvg = secondSum / secondNumbers.length; 
-
+// console.log (firstAvg);
 // console.log (secondAvg);
+// function greaterAvg(firstAvg, secondAvg){
+//  console.log (firstAvg > secondAvg); 
+// }
+// greaterAvg (firstAvg,secondAvg);
+
+
 
 //12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside 
 //            and if moneyInPocket is greater than 10.50.
@@ -140,4 +156,3 @@ let ages = [3,9,23,64,2,8,28,93];
 // } 
 
 // mileageFunction(43750, 47540, 20);
-
