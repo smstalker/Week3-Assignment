@@ -1,6 +1,6 @@
 // writing unit tests practice.
 
-var expect = chai.expect;
+ var expect = chai.expect;
 
 describe('My Functions', function() {
     describe('#doSomething', function() {
@@ -16,3 +16,12 @@ describe('My Functions', function() {
         });
     });
 });
+
+// describe('Boiler Function', function(){
+//     it ('should return "Boiler Up!"', function(){
+
+//         var x = boilers("hi", 70);
+//         expect(x).to.equal('Boiler Up!');
+//     })
+// })
+

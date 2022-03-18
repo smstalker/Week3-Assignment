@@ -1,5 +1,5 @@
 // Assignment for week 6 of JavaScript t0 create an automated version of the classic card game WAR
-// establish two arrays one for the card suits and one for the rank or number on the card. 
+// establish two arrays one for the card suits and one for the rank or number on the card called face. 
 
 const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
 const face = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace'];
@@ -11,7 +11,8 @@ let hand1 = [];
 let hand2 = [];
 
 
-//Card class with  build and shuffle functions
+//Card class with suit, face and value constructors. 
+//Value is assigned so that cards can be compared later in the game. 
 class Card {
     constructor(a, b, c){
         this.suit = a
@@ -20,12 +21,16 @@ class Card {
     }
 }
 
-// create new deck
+// create new deck with function 
+function createNewDeck(){
 suits.forEach((suit) =>
   face.forEach((face, index) => {
     fullDeck.push(new Card(suit, face, index++));
   })
 );
+}
+
+createNewDeck();
 
 // for (i = 0, i; i < suits.length; i++){
 //     for (j = 0; j< face.length; j++){
@@ -60,6 +65,7 @@ console.log (hand2);
 
 
 //3: for loop with if else if statement to compare cards and award points. 
+function playingTheGame(){
 for (i = 0; i < hand1.length; i++) {
    console.log (`Player 1 card: ${hand1[i].face} of ${hand1[i].suit}  Player 2 card: ${hand2[i].face} of ${hand2[i].suit}`);
 
@@ -73,6 +79,8 @@ for (i = 0; i < hand1.length; i++) {
         console.log (`Tie Player 1 has ${p1score} points Player 2 has ${p2score} points`);
     }
     }
+  }
+  playingTheGame();
   //4: Declare winner
 
   if (p1score>p2score){
